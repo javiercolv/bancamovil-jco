@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark material background */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1f1f1f; /* Darker header background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  color: #e0e0e0; /* Light text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #e0e0e0; /* Light text */
+}
+
+header nav a {
+  margin-left: 1rem;
+  color: #e0e0e0; /* Light text */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 80px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e0e0e0;
+  background: url('/vite.svg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  transition: height 0.5s ease; /* Smooth transition for height changes */
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.welcome p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+.actions .card {
+  background: #1e1e1e; /* Dark card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+  padding: 1.5rem;
+  text-align: center;
+  width: 300px;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.actions .card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.actions .card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0; /* Light text */
+}
+
+.actions .card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #b0b0b0; /* Slightly lighter text for descriptions */
+}
+
+.actions .card button {
+  background-color: #007BFF; /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions .card button:hover {
+  background-color: #0056b3; /* Darker hover color */
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start; /* Align cards to the left */
+  align-items: flex-start; /* Align cards at the top */
+  flex-wrap: nowrap; /* Prevent wrapping for horizontal alignment */
+  gap: 1.5rem; /* Add spacing between cards */
+  overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+  padding: 1rem;
+}
